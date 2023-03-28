@@ -27,7 +27,7 @@ def populate(n=5):
         fake_last_name = faker.last_name()
         fake_email = faker.email()
         # Create new user entry
-        user = User.objects.get_or_create(fname=fake_fist_name,lname=fake_last_name,email=fake_email)[0]
+        user = User.objects.get_or_create(first_name=fake_fist_name,last_name=fake_last_name,email=fake_email)[0]
         
         
 if __name__ == '__main__':
